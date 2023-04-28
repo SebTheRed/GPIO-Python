@@ -1,0 +1,101 @@
+Installing the gpiozero library using pip
+Importing gpiozero in a Python script
+Creating a new LED object and turning it on and off
+Using the sleep function from the time module to control LED blinking frequency
+Creating a new PWMLED object to control the brightness of a LED
+Using the value attribute of a PWMLED to set the LED brightness
+Creating a new Button object to read button presses
+Using the when_pressed and when_released methods of a Button object to execute callbacks when the button is pressed or released
+Creating a new Motor object to control a DC motor
+Using the forward and backward methods of a Motor object to control the direction of a motor
+Using the speed attribute of a Motor object to set the speed of a motor
+Creating a new DistanceSensor object to read distances from an ultrasonic sensor
+Using the distance attribute of a DistanceSensor object to get the distance reading in centimeters
+Creating a new MotionSensor object to read motion from a PIR sensor
+Using the motion_detected attribute of a MotionSensor object to check if motion has been detected
+Using the wait_for_motion() method of a MotionSensor object to wait for motion to be detected
+Using the wait_for_no_motion() method of a MotionSensor object to wait for motion to stop being detected
+Creating a new LightSensor object to read light levels from a photoresistor
+Using the value attribute of a LightSensor object to get the light level reading as a value between 0 and 1
+Creating a new Buzzer object to play sounds and tones
+Using the on and off methods of a Buzzer object to turn it on and off
+Using the beep method of a Buzzer object to play a short beep
+Using the play method of a Buzzer object to play a custom tone
+Creating a new RGBLED object to control an RGB LED
+Using the color attribute of a RGBLED object to set the color of the LED
+Creating a new Servo object to control a servo motor
+Using the min and max attributes of a Servo object to set the minimum and maximum pulse widths for the servo
+Using the angle attribute of a Servo object to set the angle of the servo
+Creating a new LEDBoard object to control multiple LEDs with a single object
+Using the on and off methods of a LEDBoard object to turn on and off multiple LEDs
+Using the value attribute of a LEDBoard object to set the state of all LEDs at once
+Creating a new MotorBoard object to control multiple motors with a single object
+Using the forward and backward methods of a MotorBoard object to control the direction of multiple motors
+Using the value attribute of a MotorBoard object to set the speed of all motors at once
+Creating a new OutputDevice object to control any output device connected to a GPIO pin
+Using the on and off methods of an OutputDevice object to turn the device on and off
+Using the blink method of an OutputDevice object to make the device blink
+Using the pulse method of an
+Using the pulse method of an OutputDevice object to create a pulse on the device
+Creating a new ButtonBoard object to read input from multiple buttons with a single object
+Using the when_pressed and when_released methods of a ButtonBoard object to execute callbacks when any of the buttons are pressed or released
+Creating a new LEDBarGraph object to control a bar graph display
+Using the value attribute of a LEDBarGraph object to set the level of the bar graph
+Creating a new TrafficLights object to control a traffic light system
+Using the red, yellow, and green attributes of a TrafficLights object to control each light in the system
+Creating a new RGBLEDStrip object to control a strip of RGB LEDs
+Using the color attribute of a RGBLEDStrip object to set the color of the entire strip
+Using the set_pixel method of a RGBLEDStrip object to set the color of individual pixels on the strip
+Creating a new DistanceSensor object with custom trigger and echo pins
+Creating a new MCP300X object to read analog signals from an MCP3008 or MCP3208 ADC chip
+Using the value attribute of a MCP300X object to read the analog signal value from the ADC chip.
+
+Creating a new SmoothedInputDevice object to smooth out noisy input signals
+Using the wait_for_active and wait_for_inactive methods of an InputDevice object to block until a specified event occurs
+Creating a new Servo object to control a servo motor
+Using the angle attribute of a Servo object to set the angle of the motor
+Using the min_pulse_width, max_pulse_width, and frame_width parameters of a Servo object to configure the motor's pulse settings
+Creating a new DistanceSensor object with a max_distance parameter to limit the maximum detection distance
+Using the threshold_distance attribute of a DistanceSensor object to set a threshold distance for triggering events
+Creating a new LightSensor object to read input from a light sensor
+Using the wait_for_dark and wait_for_light methods of a LightSensor object to block until the light level changes
+Creating a new MotionSensor object to read input from a motion sensor
+Using the wait_for_motion and wait_for_no_motion methods of a MotionSensor object to block until motion is detected or stops
+Creating a new Buzzer object to control a buzzer or piezo speaker
+Using the on and off methods of a Buzzer object to turn the buzzer on and off
+Using the beep method of a Buzzer object to play a beep sound
+Creating a new Motor object to control a DC motor
+Using the forward, backward, and stop methods of a Motor object to control the motor's direction and speed
+Creating a new Robot object to control a two-wheeled robot chassis with two motors
+Using the left, right, forward, backward, and stop methods of a Robot object to control the robot's movement
+Using the source parameter of an OutputDevice object to control the source of the output signal (default is GPIO)
+Creating a new Button object with a hold_time parameter to trigger a "held" event when the button is held down for a certain amount of time
+Using the when_held method of a Button object to execute a callback when the button is held down for a certain amount of time
+Creating a new LED object with a blink parameter to automatically blink the LED at a specified frequency
+Using the blink attribute of an LED object to enable or disable the blink feature
+Creating a new LED object with a fade parameter to automatically fade the LED in and out at a specified frequency
+Using the pulse attribute of an LED object to enable or disable the pulse feature
+Using the blink_on and blink_off attributes of an LED object to set the on and off durations for the blink feature
+Using the fade_in and fade_out attributes of an LED object to set the duration of the fade in and fade out phases for the fade feature
+Creating a new LED object with a pin_factory parameter to specify a custom pin factory object for pin management
+Creating a new PWMOutputDevice object to generate PWM output signals
+Using the value attribute of a PWMOutputDevice object to set the duty cycle of the output signal
+Using the frequency attribute of a PWMOutputDevice object to set the frequency of the output signal
+Using the when_changed method of a DigitalInputDevice object to execute a callback when the input state changes
+Creating a new DigitalOutputDevice object to control digital output signals
+Using the value attribute of a DigitalOutputDevice object to set the output state
+Using the active_high and active_low parameters of a DigitalOutputDevice object to specify the active state of the output signal
+Creating a new LEDBoard object to control a board of multiple LEDs
+Using the value attribute of an LEDBoard object to set the state of all LEDs on the board at once
+Using the on, off, toggle, and blink methods of an LEDBoard object to control the individual LEDs on the board
+Creating a new RGBLED object to control a common-cathode RGB LED
+Using the color attribute of an RGBLED object to set the color of the LED
+Using the blink attribute of an RGBLED object to enable or disable the blink feature for all colors simultaneously
+Using the pulse attribute of an RGBLED object to enable or disable the pulse feature for all colors simultaneously
+Using the red, green, and blue attributes of an RGBLED object to set the intensity of each color channel separately
+Creating a new TrafficLights object to control a set of traffic lights with multiple LEDs
+Using the red, yellow, and green attributes of a TrafficLights object to control the individual LEDs for each light
+Using the green.sequence, yellow.sequence, and red.sequence attributes of a TrafficLights object to specify a sequence of patterns to display for each light
+Creating a new MCP3008 object to read analog input signals from an MCP3008 analog-to-digital converter chip
+Using the value attribute of an MCP3008 object to read the analog value from a specified channel on the chip
+Using the max_voltage and vref parameters of an MCP3008 object to configure the voltage reference and range for analog input signals.
