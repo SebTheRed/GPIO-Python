@@ -1,6 +1,7 @@
 Installing the gpiozero library using pip
 Importing gpiozero in a Python script
 Creating a new LED object and turning it on and off
+
 Using the sleep function from the time module to control LED blinking frequency
 Creating a new PWMLED object to control the brightness of a LED
 Using the value attribute of a PWMLED to set the LED brightness
