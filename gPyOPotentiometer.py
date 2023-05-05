@@ -1,14 +1,57 @@
 from gpiozero import PWMLED, AnalogInputDevice
+from time import sleep
 
 class ChallengeTwo:
     def __init__ (self):
-        self.led = PWMLED(17)
+        self.led = PWMLED(17, frequency=1000)
         self.pot = AnalogInputDevice(25, max_voltage=3.3)
+        self.led.source = self.pot
+    def ledStepPulse (self):
+        while True:
+            self.led.value = 0.1
+            sleep(2)
+            self.led.value = 0.2
+            sleep(0.2)
+            self.led.value = 0.3
+            sleep(0.2)
+            self.led.value = 0.4
+            sleep(0.2)
+            self.led.value = 0.5
+            sleep(0.2)
+            self.led.value = 0.6
+            sleep(0.2)
+            self.led.value = 0.7
+            sleep(0.2)
+            self.led.value = 0.8
+            sleep(0.2)
+            self.led.value = 0.9
+            sleep(0.2)
+            self.led.value = 1
+            sleep(2)
+            self.led.value = 0.9
+            sleep(0.2)
+            self.led.value = 0.8
+            sleep(0.2)
+            self.led.value = 0.7
+            sleep(0.2)
+            self.led.value = 0.6
+            sleep(0.2)
+            self.led.value = 0.5
+            sleep(0.2)
+            self.led.value = 0.4
+            sleep(0.2)
+            self.led.value = 0.3
+            sleep(0.2)
+            self.led.value = 0.2
+            sleep(0.2)
+    def ledPulse (self):
+        while True:
+            self.led.value = 1
+            self.led.pulse()
 
 initClass = ChallengeTwo()
-while True:
-    # initClass.led.value = 1
-    initClass.led.pulse()
+initClass.ledStepPulse()
+
 
 #Challenge #2
 '''
