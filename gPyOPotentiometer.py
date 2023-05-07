@@ -1,4 +1,4 @@
-from gpiozero import PWMLED, AnalogInputDevice
+from gpiozero import PWMLED
 from ADCDevice import *
 import time
 
