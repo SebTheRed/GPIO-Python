@@ -2,7 +2,7 @@ from gpiozero import LEDBarGraph
 from ADCDevice import *
 import time
 
-class ChallengeThree:
+class ChallengeFour:
     def __init__ (self):
         self.adc = ADCDevice()
         self.ledBar = LEDBarGraph(17, 27, 18, 23, 24, 25, 12, 16, 20, 21)
@@ -22,10 +22,10 @@ class ChallengeThree:
             time.sleep(0.1)
             
 
-inst = ChallengeThree()
+inst = ChallengeFour()
 inst.adjustBarGraph()
 
-#Challenge 3
+#Challenge 4
 '''
 Create an LEDBarGraph with 10 LEDs connected to pins.
 and control it using a potentiometer connected to pin 2.
