@@ -5,8 +5,7 @@ class CatFeeder:
     def __init__ (self):
         self.servoMotor = Servo(18)
         self.ledLight = LED(23)
-        self.buzzerSpeaker = Buzzer(17)
-        self.servoValue = -1
+        self.servoValue = 0
     def spinOnTenSeconds (self):
         while True:
             self.ledLight.on()
@@ -15,16 +14,15 @@ class CatFeeder:
             self.servoMotor.detach()
             self.ledLight.off()
             if self.servoValue == 1:
-                self.servoValue = -1
+                self.servoValue = 0
             else:
-                self.servoValue += 1
+                self.servoValue += 0.1
             print(self.servoValue)
             sleep(10)
     def testFunc (self):
         while True:
             self.ledLight.on()
             self.servoMotor.min()
-            self.buzzerSpeaker.on()
             print("min")
             sleep(0.5)
             self.ledLight.off()
@@ -44,6 +42,14 @@ class CatFeeder:
             self.ledLight.off()
             self.servoMotor.detach()
             sleep(2)
+    def spinNinety (self):
+        while True:
+            self.ledLight.on()
+            self.servoMotor.value = 0.09
+            sleep(0.02)
+            self.servoMotor.detach()
+            self.ledLight.off()
+            sleep(5)
 
 newCatFeeder = CatFeeder()
-newCatFeeder.testFunc()
+newCatFeeder.spinNinety()

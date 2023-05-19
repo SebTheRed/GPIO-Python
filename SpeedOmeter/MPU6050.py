@@ -432,7 +432,7 @@ class MPU6050:
         if self.__debug:
             print('Setting slave 0 address to 0x7F')
         self.set_slave_address(0, 0x7F)
-        if self.__debug:
+        if self.__debug:                  
             print('Disabling I2C Master mode')
         self.set_I2C_master_mode_enabled(False)
         if self.__debug:
