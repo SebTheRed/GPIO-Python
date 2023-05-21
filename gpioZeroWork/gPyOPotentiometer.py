@@ -1,5 +1,5 @@
 from gpiozero import PWMLED
-from ADCDevice import *
+from gpioZeroWork.ADCDevice import *
 import time
 
 class PotentioClass:
