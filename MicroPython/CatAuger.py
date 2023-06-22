@@ -48,4 +48,8 @@ class CatAuger:
         self.servo.duty_u16(0)
 
 augerInst = CatAuger()
-augerInst.dispenseFood()
+while True:
+    augerInst.dispenseFood()
+    #time.sleep(10) #wait 60 seconds
+    time.sleep(24 * 60 * 60)  # wait for 24 hours
+    #GOOD LUCK@
